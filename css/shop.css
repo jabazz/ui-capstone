@@ -1,0 +1,132 @@
+.section-shop {
+  padding: 6.4rem 9.6rem;
+}
+.shop-box {
+  display: grid;
+  grid-template-columns: 45fr 55fr;
+  gap: 4.4rem;
+}
+
+.shop-img-box {
+  /* background-image: linear-gradient(#3880ff, #a6a5a578); */
+  position: relative;
+}
+
+.shop-img {
+  width: 100%;
+  /* opacity: 0.9; */
+}
+
+.shop-img-box::before {
+  content: "-24%";
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  /* padding-top: 2.4rem; */
+  /* text-align: center; */
+  border-radius: 50%;
+  background-color: #c65206;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(50%, 50%);
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.star-icons {
+  list-style: none;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.star-icons li svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  stroke: #c65206;
+  fill: #c65206;
+}
+
+.star-icons li:last-child svg {
+  stroke: #c65206;
+  fill: #d69c76;
+}
+
+/* .star-icons li:not(:last-child) {
+  stroke: #c65206;
+  fill: #c65206;
+} */
+
+.reviews-count {
+  font-size: 1.2rem;
+}
+
+.price {
+  display: flex;
+  gap: 2.2rem;
+  font-size: 1.8rem;
+}
+.normal-price {
+  /* font-size: 1.8rem; */
+  color: #777;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+.discount-price {
+  color: #1c7ed6;
+  font-weight: 500;
+}
+.shop-item-description {
+  font-size: 1.4rem;
+  color: #777;
+}
+
+.size-box select {
+  width: 50%;
+  font-size: 1.6rem;
+  background-color: #e5e5e5;
+  border: none;
+  border: 1px solid #999;
+  font-weight: 500;
+  padding: 1.2rem 0;
+  border-radius: 9px;
+}
+
+.size-box select option {
+  background-color: #fff;
+}
+
+.breadcrum-items {
+  list-style: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+}
+
+.breadcrum-items li:not(:last-child)::after {
+  /* color: #888; */
+  content: "/";
+  padding: 0 0.2rem;
+}
+
+.breadcrum-items li:not(:last-child) {
+  color: #888;
+}
+
+.other-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.other-details span {
+  font-weight: 600;
+}
